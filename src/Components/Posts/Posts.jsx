@@ -7,7 +7,7 @@ const Posts = () => {
     return (
         <div>
             <h2>Total POsts : {allPosts.length}</h2>
-            <div className="grid grid-cols-3 gap-4">
+            <div className="container mx-auto w-11/12 grid grid-cols-3 gap-4">
                 {
                     allPosts.map( post => <Post key={post.it} post={post}></Post>)
                 }

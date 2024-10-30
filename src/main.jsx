@@ -13,6 +13,7 @@ import Users from './Components/Users/Users';
 import UserDetails from './Components/UserDetails/UserDetails';
 import Posts from './Components/Posts/Posts';
 import PostDetail from './Components/PostDetails/PostDetail';
+import Error from './Components/Error/Error';
 
 // import App from './App.jsx'
 
@@ -20,6 +21,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Home></Home>,
+    errorElement : <Error></Error> ,
     children: [
       {
         path: '/about',
@@ -52,7 +54,8 @@ const router = createBrowserRouter([
         element : <PostDetail></PostDetail>
       },
 
-    ]
+    ],
+     
   },
 
 ]);
