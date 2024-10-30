@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
 const User = ({ user }) => {
-    const { name, id, email, phone } = user
+    const { name, id, email, phone } = user ;
     return (
         <div className="bg-slate-400 text-black/75 p-8 rounded-2xl">
             <div className="">
